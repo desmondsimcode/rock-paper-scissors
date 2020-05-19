@@ -4,13 +4,35 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Rock Paaper Scissors Game</title>
+		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-        <header>
-            <h1>Rock Paper Scissors</h1>
-        </header>
-        <div class="score-board">
-            
-        </div>
-    </body>
+		<header>
+			<h1>Rock Paper Scissors</h1>
+		</header>
+		<div class="score-board">
+			<div id="user-label" class="badge">user</div>
+			<div id="computer-label" class="badge">computer</div>
+			<!-- Using span is because span is an inline element -->
+			<span id="user-score">0</span>:<span id="computer-score">0</span>
+		</div>
+
+		<div class="results">
+			<p>Paper covers rock. You win!</p>
+		</div>
+
+		<div class="choices">
+			<div id="r" class="choice">
+				<img src="https://img.icons8.com/officel/80/000000/hand-rock.png" />
+			</div>
+			<div id="p" class="choice">
+				<img src="https://img.icons8.com/officel/80/000000/hand.png" />
+			</div>
+			<div id="s" class="choice">
+				<img src="https://img.icons8.com/officel/80/000000/two-fingers.png" />
+			</div>
+		</div>
+		<p id="action-message">Make your move</p>
+	</body>
+	<script src="app.js"></script>
 </html>
